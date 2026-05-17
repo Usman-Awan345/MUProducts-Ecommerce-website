@@ -1,6 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { FaMailBulk } from 'react-icons/fa'
-import { FaLocationDot, FaPhone, FaQuestion } from 'react-icons/fa6'
+import { FaLocationDot, FaPhone } from 'react-icons/fa6'
 
 const Footer = () => {
     return (
@@ -29,7 +30,7 @@ const Footer = () => {
                         <FaMailBulk />
                         <div>
                             <h5 className='h5'>Email Support</h5>
-                            <p>ua3205477.com</p>
+                            <p>ua3205477@gmail.com</p>
                         </div>
                     </div>
                 </div>
@@ -47,7 +48,7 @@ const Footer = () => {
                         <h4 className='h4 mb-3'>Customer Service</h4>
                         <li className='my-2'><a href="" className='text-gray-30 regular-14 '>Help center</a></li>
                         <li className='my-2'><a href="" className='text-gray-30 regular-14 '>Payment methods</a></li>
-                        <li className='my-2'><a href="" className='text-gray-30 regular-14 '>Contact</a></li>
+                        <li className='my-2'><Link to="/contact" className='text-gray-30 regular-14 '>Contact</Link></li>
                         <li className='my-2'><a href="" className='text-gray-30 regular-14 '>Shipping status</a></li>
                         <li className='my-2'><a href="" className='text-gray-30 regular-14 '>Complaints</a></li>
                     </ul>
@@ -70,7 +71,7 @@ const Footer = () => {
                 </div>
             </div>
             {/* copyrights */}
-            <p className='max-padd-container bg-primary medium-14 py-2 px-8 rounded flexBetween mt-6'><span>2025 Outfiro</span><span>All rights reserved</span></p>
+            <p className='max-padd-container bg-primary medium-14 py-2 px-8 rounded flexBetween mt-6'><span>2025 MU-Products</span><span>All rights reserved</span></p>
         </footer>
     )
 }

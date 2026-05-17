@@ -6,6 +6,8 @@ MUProducts is a MERN stack e-commerce project with three separate apps:
 - `admin` - admin dashboard for product and order management
 - `backend` - Express/MongoDB API for authentication, products, cart, orders, Cloudinary uploads, and Stripe payments
 
+The customer app includes product browsing, cart, checkout, testimonials, and a contact page. The admin app handles product uploads, product listings, orders, and order status updates.
+
 ## Tech Stack
 
 | Layer | Technology |
@@ -56,6 +58,7 @@ MUProducts MERN stack Web/
 - Product collection page
 - Product detail page with size selection
 - Cart management
+- Contact page with support information and email form
 - User registration and login
 - Protected order placement flow
 - COD order placement
@@ -82,6 +85,44 @@ MUProducts MERN stack Web/
 - COD and Stripe order placement
 - Stripe payment verification
 - Order status management
+
+## Screenshots
+
+### Customer Website
+
+#### Home Page
+
+![MUProducts home page](frontend/src/assets/screenshots/Home_Page.png)
+
+#### Product Collection
+
+![MUProducts product collection page](frontend/src/assets/screenshots/Product_Collection.png)
+
+#### Add To Cart
+
+![MUProducts add to cart page](frontend/src/assets/screenshots/AddToCart_Page.png)
+
+#### Delivery Information
+
+![MUProducts delivery information checkout page](frontend/src/assets/screenshots/Delivery_Information.png)
+
+#### Testimonials
+
+![MUProducts testimonials page](frontend/src/assets/screenshots/Testimonials.png)
+
+### Admin Dashboard
+
+#### Add Items
+
+![MUProducts admin add items page](frontend/src/assets/screenshots/Add_Items.png)
+
+#### Items List
+
+![MUProducts admin items list page](frontend/src/assets/screenshots/Items_Lists.png)
+
+#### Orders
+
+![MUProducts admin order page](frontend/src/assets/screenshots/Order_page.png)
 
 ## Prerequisites
 

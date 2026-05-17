@@ -6,7 +6,7 @@ function Navbar({containerStyles}) {
         {path:'/',title: 'Home'},
         {path:'/collection',title: 'Collection'},
         {path:'/testimonials',title: 'Testimonials'},
-        {path:'/mailto:ua3205477@gmail.com',title: 'Contact'},
+        {path:'/contact',title: 'Contact'},
     ]
   return (
      <nav className={`${containerStyles}`}>
