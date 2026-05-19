@@ -1,6 +1,6 @@
 import orderModel from "../models/orderModel.js";
 import userModel from "../models/userModel.js";
-import Stripe from "Stripe";
+import Stripe from "stripe";
 
 const currency = "pkr";
 const deliveryCharges = 10
@@ -63,7 +63,7 @@ const placeOrderStripe = async (req,res)=>{
                 name: item.name,
                 // images: [item.product.image]
             },
-            unit_amount: item.price * 100 * 277
+            unit_amount: Math.round(item.price * 100 * 277)
         },
         quantity: item.quantity
     }))
@@ -74,7 +74,7 @@ const placeOrderStripe = async (req,res)=>{
                 name: 'Delivery Charges',
                 
             },
-            unit_amount: deliveryCharges * 100 * 277
+            unit_amount: Math.round(deliveryCharges * 100 * 277)
         },
         quantity: 1
     })
