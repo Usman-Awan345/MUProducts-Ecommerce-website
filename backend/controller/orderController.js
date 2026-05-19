@@ -6,7 +6,7 @@ const currency = "pkr";
 const deliveryCharges = 10
 
 // Initialize Stripe API with your secret key
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || 'placeholder_key');
 
 // Controller function for placing order using COD method
 const placeOrder = async (req, res) => {
